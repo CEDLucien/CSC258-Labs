@@ -106,3 +106,4 @@ module ratedivider (clock, period, reset_n, q);
     end
 
 endmodule
+
