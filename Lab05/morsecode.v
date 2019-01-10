@@ -1,3 +1,5 @@
+//Partner's version
+
 module morse (KEY, SW, CLOCK_50, LEDR);
 
     input [1:0] KEY;
