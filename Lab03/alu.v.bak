@@ -1,0 +1,66 @@
+module alu(SW, KEY, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
+	input [7:0] SW;
+	input [2:0] KEY;
+	output [7:0] LEDR;
+	output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	
+	reg [7:0] ALUout;
+	
+	wire w1, w2;
+	wire [9:0] w3;
+	
+	function5 a(
+		.a(SW[7:4]),
+		.c(w1)
+	);
+	
+	function5 b(
+		.a(SW[3:0]),
+		.c(w2)
+	);
+	
+	ripplecarry r(
+		.SW(SW),
+		.LEDR(w3)
+	);
+	
+	always @(*)
+	begin
+		case(KEY[2:0])
+			3'b111: ALUout = {SW[7:4], SW[3:0]};
+			3'b110: ALUout = {3'b000, w3[9], w3[3:0]};
+			3'b101: ALUout = SW[7:4] + SW[3:0];
+			3'b100: ALUout = {SW[7:4] | SW[3:0], SW[7:4] ^ SW[3:0]};
+			3'b011: ALUout = {7'b0000000, SW[7] | SW[6] | SW[5] | SW[4] | SW[3] | SW[2] | SW[1] | SW[0]};
+			3'b010: ALUout = {7'b0000000, w1 & w2};
+			default: ALUout = 8'b00000000;
+		endcase
+	end
+	
+	assign LEDR = ALUout;
+	
+	hex_play hex0(
+		.SW(SW[7:4]),
+		.HEX(HEX0[6:0])
+	);
+	hex_play hex1(
+		.SW(4'b0000),
+		.HEX(HEX1[6:0])
+	);
+	hex_play hex2(
+		.SW(SW[3:0]),
+		.HEX(HEX2[6:0])
+	);
+	hex_play hex3(
+		.SW(4'b0000),
+		.HEX(HEX3[6:0])
+	);
+	hex_play hex4(
+		.SW(ALUout[3:0]),
+		.HEX(HEX4[6:0])
+	);
+	hex_play hex5(
+		.SW(ALUout[7:4]),
+		.HEX(HEX5[6:0])
+	);
+endmodule

@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at sevensegment.v(57): object "a" differs only in case from object "A" in the same scope File: C:/Users/LucasX/Documents/Lab_02/sevensegment.v Line: 57
+Info (10281): Verilog HDL Declaration information at sevensegment.v(71): object "b" differs only in case from object "B" in the same scope File: C:/Users/LucasX/Documents/Lab_02/sevensegment.v Line: 71
+Info (10281): Verilog HDL Declaration information at sevensegment.v(85): object "c" differs only in case from object "C" in the same scope File: C:/Users/LucasX/Documents/Lab_02/sevensegment.v Line: 85
+Info (10281): Verilog HDL Declaration information at sevensegment.v(97): object "d" differs only in case from object "D" in the same scope File: C:/Users/LucasX/Documents/Lab_02/sevensegment.v Line: 97

@@ -1,0 +1,8 @@
+Info (10281): Verilog HDL Declaration information at counter.v(134): object "a" differs only in case from object "A" in the same scope File: C:/Users/LucasX/Documents/Lab05/counter.v Line: 134
+Info (10281): Verilog HDL Declaration information at counter.v(134): object "b" differs only in case from object "B" in the same scope File: C:/Users/LucasX/Documents/Lab05/counter.v Line: 134
+Info (10281): Verilog HDL Declaration information at counter.v(134): object "c" differs only in case from object "C" in the same scope File: C:/Users/LucasX/Documents/Lab05/counter.v Line: 134
+Info (10281): Verilog HDL Declaration information at counter.v(134): object "d" differs only in case from object "D" in the same scope File: C:/Users/LucasX/Documents/Lab05/counter.v Line: 134
+Info (10281): Verilog HDL Declaration information at clockcounter.v(114): object "a" differs only in case from object "A" in the same scope File: C:/Users/LucasX/Documents/Lab05/clockcounter.v Line: 114
+Info (10281): Verilog HDL Declaration information at clockcounter.v(114): object "b" differs only in case from object "B" in the same scope File: C:/Users/LucasX/Documents/Lab05/clockcounter.v Line: 114
+Info (10281): Verilog HDL Declaration information at clockcounter.v(114): object "c" differs only in case from object "C" in the same scope File: C:/Users/LucasX/Documents/Lab05/clockcounter.v Line: 114
+Info (10281): Verilog HDL Declaration information at clockcounter.v(114): object "d" differs only in case from object "D" in the same scope File: C:/Users/LucasX/Documents/Lab05/clockcounter.v Line: 114
