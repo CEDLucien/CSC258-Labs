@@ -1,1 +1,3 @@
 # CSC258 Labs 2018 Fall
+When you're a stats spec. student and decide to take this course... 
+At least it was fun.
